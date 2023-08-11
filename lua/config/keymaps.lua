@@ -13,6 +13,10 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+-- recenter screen on large movement
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
+
 -- better up/down
 map("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })

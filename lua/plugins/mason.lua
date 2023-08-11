@@ -9,6 +9,8 @@ return {
       "json-lsp",
       "typescript-language-server",
       "tailwindcss-language-server",
+      "prettierd",
+      "eslint_d",
     },
   },
   ---@param opts MasonSettings | {ensure_installed: string[]}
